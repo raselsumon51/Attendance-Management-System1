@@ -1,0 +1,18 @@
+
+  <h4 class="mx-3">Attendance</h4>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Student Name</th>
+        <th>Attendance Count</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% results.forEach(function(result) { %>
+        <tr>
+          <td><%= result.name %></td>
+          <td><%= result.count %></td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
